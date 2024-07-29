@@ -17,20 +17,20 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'mail.mkvektor55.ru';                     //Set the SMTP server to send through
+    $mail->Host       = '';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'info@mkvektor55.ru';                     //SMTP username
-    $mail->Password   = 'sJ5qR7kP3m';                               //SMTP password
+    $mail->Username   = '';                     //SMTP username
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('kolu4aya20111@yandex.ru', 'Mailer');
-    $mail->addAddress('kolu4aya20111@yandex.ru', 'Вектор');     //Add a recipient
-    $mail->addAddress('kolu4aya20111@yandex.ru');               //Name is optional
-    $mail->addReplyTo('kolu4aya20111@yandex.ru', 'Вектор');
-    $mail->addCC('kolu4aya20111@yandex.ru');
-    $mail->addBCC('kolu4aya20111@yandex.ru');
+    $mail->setFrom('', 'Mailer');
+    $mail->addAddress('', 'Вектор');     //Add a recipient
+    $mail->addAddress('');               //Name is optional
+    $mail->addReplyTo('', 'Вектор');
+    $mail->addCC('');
+    $mail->addBCC('');
 
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
